@@ -1,0 +1,29 @@
+﻿<Page
+    x:Class="WindowsAppText.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WindowsAppText"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <VisualStateManager.VisualStateGroups>
+            
+        </VisualStateManager.VisualStateGroups>
+        <ToggleSwitch VerticalAlignment="Top" Toggled="ToggleSwitch_Toggled" Header="Use Textbox" Margin="10,26,10,542" Height="72"/>
+
+
+
+        <Button x:Name="Clear" Visibility="Collapsed" Content="Clear" HorizontalAlignment="Left" Margin="31,64,0,0" VerticalAlignment="Top" Height="50" Width="50" Click="ClearClick"/>
+        <Button x:Name="Save"  Visibility="Collapsed" Background="Coral" Content="Save" HorizontalAlignment="Left" Margin="145,64,0,0" VerticalAlignment="Top" Height="46" Width="109" Click="SaveClick"/>
+        <Button x:Name="Load"  Visibility="Collapsed" Content="Load" HorizontalAlignment="Left" Margin="259,64,0,0" VerticalAlignment="Top" Height="38" Width="109" Click="loadFile"/>
+        
+        <StackPanel Margin="20,155,20,299">
+            <TextBox Visibility="Collapsed" ScrollViewer.IsVerticalRailEnabled="True" ScrollViewer.VerticalScrollBarVisibility="Visible"  x:Name="textBox"  TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="162" Width="316" AcceptsReturn="True" />
+        </StackPanel>
+    </Grid>
+</Page>

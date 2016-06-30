@@ -1,0 +1,20 @@
+﻿<Page
+    x:Class="WindowsAppText.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WindowsAppText"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button Content="Clear" HorizontalAlignment="Left" Margin="50,163,0,0" VerticalAlignment="Top" Height="58" Width="230" Click="ClearClick"/>
+        <Button x:Name="Save" Background="Coral" Content="Save" HorizontalAlignment="Left" Margin="50,255,0,0" VerticalAlignment="Top" Height="58" Width="230" Click="SaveClick"/>
+        <TextBox x:Name="textBox" Margin="360,59,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="632" KeyDown="Enter" AcceptsReturn="True" HorizontalAlignment="Left" Width="896"/>
+        <Button Content="Load" HorizontalAlignment="Left" Margin="50,356,0,0" VerticalAlignment="Top" Height="58" Width="230" Click="loadFile"/>
+        
+    </Grid>
+</Page>
